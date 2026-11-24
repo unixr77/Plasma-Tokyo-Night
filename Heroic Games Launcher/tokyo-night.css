@@ -1,0 +1,122 @@
+/*
+ * Tokyo Night — Heroic Games Launcher teması
+ * Palet: folke/tokyonight.nvim (Night varyantı)
+ *
+ * Dosya adı "tokyo-night.css" olmalı; Heroic body'ye `tokyo-night` sınıfını ekler.
+ * Dosyayı düzenlersen: Accessibility > Select Theme'den temayı kaldırıp tekrar seç.
+ *
+ *   bg          #1a1b26    bg_dark     #16161e    bg_highlight  #292e42
+ *   fg          #c0caf5    fg_dark     #a9b1d6    comment       #565f89
+ *   blue        #7aa2f7    cyan        #7dcfff    magenta       #bb9af7
+ *   green       #9ece6a    yellow      #e0af68    orange        #ff9e64
+ *   red         #f7768e    border      #27a1b9    terminal_black #414868
+ */
+
+body.tokyo-night {
+  /* Metin */
+  --text-default: #c0caf5;
+  --text-secondary: #a9b1d6;
+  --text-tertiary: #16161e;
+
+  /* Zemin */
+  --background: #1a1b26;
+  --background-darker: #16161e;
+  --background-lighter: #292e42;
+  --body-background: #1a1b26;
+  --gradient-body-background: #1a1b26;
+  --current-background: #1a1b26;
+  --input-background: #292e42;
+  --icons-background: #1a1b26;
+  --controller-hints-background: transparent;
+
+  /* Modal ve ekran klavyesi */
+  --modal-background: #16161e;
+  --modal-border: #7aa2f7;
+  --osk-background: #1a1b26;
+  --osk-button-background: #292e42;
+  --osk-button-border: #16161e;
+
+  /* Arama çubuğu */
+  --search-bar-background: #292e42;
+  --search-bar-border: #414868;
+
+  /* İkonlar */
+  --action-icon: #c0caf5;
+  --action-icon-hover: #565f89;
+  --action-icon-active: #7aa2f7;
+
+  /* Vurgu rengi */
+  --brand-primary: #7aa2f7;
+  --brand-primary-hover: #7dcfff;
+  --primary: #7aa2f7;
+  --secondary: #bb9af7;
+  --accent: #7aa2f7;
+
+  /* Butonlar */
+  --primary-button: #7aa2f7;
+  --primary-button-overlay: #7dcfff;
+  --secondary-button: #bb9af7;
+  --secondary-button-overlay: #c8adf9;
+  --tertiary-button: #414868;
+  --tertiary-button-overlay: #565f89;
+  --success-button: #9ece6a;
+  --disabled-button: #292e42;
+  --disabled-button-overlay: #16161e;
+
+  /* Kenar çubuğu */
+  --navbar-active: #7aa2f7;
+  --navbar-inactive: #a9b1d6;
+  --navbar-active-background: #292e42;
+  --navbar-accent: #7aa2f7;
+  --navbar-background: #16161e;
+  --divider: #16161e;
+
+  /* Durum renkleri */
+  --success: #9ece6a;
+  --success-hover: #b9f27c;
+  --danger: #f7768e;
+  --danger-hover: #ff9e64;
+  --status-success: #9ece6a;
+  --status-warning: #e0af68;
+  --status-danger: #f7768e;
+  --status-info: #7dcfff;
+
+  /* Nötr tonlar */
+  --neutral-01: #16161e;
+  --neutral-02: #1a1b26;
+  --neutral-03: #292e42;
+  --neutral-04: #414868;
+  --neutral-05: #a9b1d6;
+  --neutral-06: #c0caf5;
+}
+
+/* Girdi ve seçim kutularındaki varsayılan gölgeyi kaldır */
+body.tokyo-night select,
+body.tokyo-night input {
+  box-shadow: none !important;
+}
+
+/* Metin seçimi */
+body.tokyo-night ::selection {
+  background: #283457;
+  color: #c0caf5;
+}
+
+/* Kaydırma çubuğu */
+body.tokyo-night ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body.tokyo-night ::-webkit-scrollbar-track {
+  background: #16161e;
+}
+
+body.tokyo-night ::-webkit-scrollbar-thumb {
+  background: #414868;
+  border-radius: 6px;
+}
+
+body.tokyo-night ::-webkit-scrollbar-thumb:hover {
+  background: #565f89;
+}

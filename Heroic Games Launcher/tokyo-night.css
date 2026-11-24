@@ -68,8 +68,8 @@ body.tokyo-night {
   --navbar-inactive: #a9b1d6;
   --navbar-active-background: #292e42;
   --navbar-accent: #7aa2f7;
-  --navbar-background: #16161e;
-  --divider: #16161e;
+  --navbar-background: #1a1b26;
+  --divider: #292e42;
 
   /* Durum renkleri */
   --success: #9ece6a;
@@ -88,6 +88,11 @@ body.tokyo-night {
   --neutral-04: #414868;
   --neutral-05: #a9b1d6;
   --neutral-06: #c0caf5;
+}
+
+/* Sol panel ana alanla aynı renkte; ayrım ince bir kenar çizgisiyle yapılır */
+body.tokyo-night .Sidebar {
+  box-shadow: inset -1px 0 0 #292e42;
 }
 
 /* Girdi ve seçim kutularındaki varsayılan gölgeyi kaldır */
